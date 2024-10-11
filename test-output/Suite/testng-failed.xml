@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="End to end Framework test">
+    <classes>
+      <class name="AppiumTest.Ecomm_TC_4_Hybrid"/>
+    </classes>
+  </test> <!-- End to end Framework test -->
+  <test name="Error validation Test">
+    <classes>
+      <class name="AppiumTest.Ecomm_TC_2"/>
+    </classes>
+  </test> <!-- Error validation Test -->
+</suite> <!-- Failed suite [Suite] -->

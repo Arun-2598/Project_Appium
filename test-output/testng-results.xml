@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-11T13:10:44Z" name="Default suite" finished-at="2024-10-11T13:11:33Z" duration-ms="48936">
+    <groups>
+    </groups>
+    <test started-at="2024-10-11T13:10:44Z" name="Default test" finished-at="2024-10-11T13:11:33Z" duration-ms="48936">
+      <class name="AppiumTest.Ecomm_TC_4_Hybrid">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:AppiumTest.Ecomm_TC_4_Hybrid@71809907]" started-at="2024-10-11T18:40:44Z" name="ConfigureAppium" finished-at="2024-10-11T18:40:59Z" duration-ms="14991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method is-config="true" signature="Property()[pri:0, instance:AppiumTest.Ecomm_TC_4_Hybrid@71809907]" started-at="2024-10-11T18:40:59Z" name="Property" finished-at="2024-10-11T18:40:59Z" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Property -->
+        <test-method signature="generalStore(java.util.HashMap)[pri:0, instance:AppiumTest.Ecomm_TC_4_Hybrid@71809907]" started-at="2024-10-11T18:41:00Z" name="generalStore" data-provider="getData" finished-at="2024-10-11T18:41:27Z" duration-ms="27560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=Argentina, gender=Male, name=Rahul}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generalStore -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.Ecomm_TC_4_Hybrid@71809907]" started-at="2024-10-11T18:41:27Z" name="tearDown" finished-at="2024-10-11T18:41:33Z" duration-ms="6031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AppiumTest.Ecomm_TC_4_Hybrid -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
