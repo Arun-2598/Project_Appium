@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <groups>
+    <run>
+      <include name="Smoke"/>
+    </run>
+  </groups>
   <test name="End to end Framework test">
     <classes>
       <class name="AppiumTest.Ecomm_TC_4_Hybrid"/>

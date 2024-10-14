@@ -2,35 +2,50 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-11T13:10:44Z" name="Default suite" finished-at="2024-10-11T13:11:33Z" duration-ms="48936">
+  <suite started-at="2024-10-12T08:43:27Z" name="Suite" finished-at="2024-10-12T08:44:02Z" duration-ms="35961">
     <groups>
+      <group name="Smoke">
+        <method signature="Ecomm_TC_2.FillForm_PositiveFlow(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AppiumTest.Ecomm_TC_2@459e9125]" name="FillForm_PositiveFlow" class="AppiumTest.Ecomm_TC_2"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-10-11T13:10:44Z" name="Default test" finished-at="2024-10-11T13:11:33Z" duration-ms="48936">
-      <class name="AppiumTest.Ecomm_TC_4_Hybrid">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:AppiumTest.Ecomm_TC_4_Hybrid@71809907]" started-at="2024-10-11T18:40:44Z" name="ConfigureAppium" finished-at="2024-10-11T18:40:59Z" duration-ms="14991" status="PASS">
+    <test started-at="2024-10-12T08:43:27Z" name="End to end Framework test" finished-at="2024-10-12T08:43:27Z" duration-ms="8">
+    </test> <!-- End to end Framework test -->
+    <test started-at="2024-10-12T08:43:27Z" name="Error validation Test" finished-at="2024-10-12T08:44:02Z" duration-ms="35882">
+      <class name="AppiumTest.Ecomm_TC_2">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:AppiumTest.Ecomm_TC_2@459e9125]" started-at="2024-10-12T14:13:27Z" name="ConfigureAppium" finished-at="2024-10-12T14:13:41Z" duration-ms="14632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method is-config="true" signature="Property()[pri:0, instance:AppiumTest.Ecomm_TC_4_Hybrid@71809907]" started-at="2024-10-11T18:40:59Z" name="Property" finished-at="2024-10-11T18:40:59Z" duration-ms="61" status="PASS">
+        <test-method is-config="true" signature="Property()[pri:0, instance:AppiumTest.Ecomm_TC_2@459e9125]" started-at="2024-10-12T14:13:41Z" name="Property" finished-at="2024-10-12T14:13:41Z" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Property -->
-        <test-method signature="generalStore(java.util.HashMap)[pri:0, instance:AppiumTest.Ecomm_TC_4_Hybrid@71809907]" started-at="2024-10-11T18:41:00Z" name="generalStore" data-provider="getData" finished-at="2024-10-11T18:41:27Z" duration-ms="27560" status="PASS">
+        <test-method signature="FillForm_PositiveFlow(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AppiumTest.Ecomm_TC_2@459e9125]" started-at="2024-10-12T14:13:41Z" name="FillForm_PositiveFlow" data-provider="setDataProvide" finished-at="2024-10-12T14:13:57Z" duration-ms="15380" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{country=Argentina, gender=Male, name=Rahul}]]>
+                <![CDATA[Rahul shetty]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Argentina]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Female]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- generalStore -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.Ecomm_TC_4_Hybrid@71809907]" started-at="2024-10-11T18:41:27Z" name="tearDown" finished-at="2024-10-11T18:41:33Z" duration-ms="6031" status="PASS">
+        </test-method> <!-- FillForm_PositiveFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.Ecomm_TC_2@459e9125]" started-at="2024-10-12T14:13:57Z" name="tearDown" finished-at="2024-10-12T14:14:02Z" duration-ms="5817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- AppiumTest.Ecomm_TC_4_Hybrid -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- AppiumTest.Ecomm_TC_2 -->
+    </test> <!-- Error validation Test -->
+  </suite> <!-- Suite -->
 </testng-results>

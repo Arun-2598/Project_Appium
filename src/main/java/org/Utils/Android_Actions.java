@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 
@@ -60,6 +61,15 @@ public class Android_Actions {
 	
 	public void waits(int value) throws InterruptedException {
 		Thread.sleep(value);
+	}
+	
+	public String getScreenshotPath(String testCaseName, AndroidDriver driver) throws IOException {
+
+		File source = driver.getScreenshotAs(OutputType.FILE);
+		String destinationFile = "C:\\Users\\arun.kumar\\eclipse-workspace\\ExtentReport\\reports" + testCaseName +" .png";
+		FileUtils.copyFile(source, new File(destinationFile));
+		
+		return destinationFile;
 	}
 
 }

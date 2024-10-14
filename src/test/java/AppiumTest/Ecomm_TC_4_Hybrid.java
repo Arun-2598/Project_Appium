@@ -25,7 +25,7 @@ public class Ecomm_TC_4_Hybrid extends BasicClass {
 	
 	
 	
-	@Test(dataProvider = "getData")
+	@Test(dataProvider = "getData", groups = "Regression")
 	public void generalStore(HashMap<String, String> input) throws InterruptedException {
 
 		form.setnameField(input.get("name"));
