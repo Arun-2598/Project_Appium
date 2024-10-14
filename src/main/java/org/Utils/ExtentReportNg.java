@@ -8,7 +8,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class ExtentReportNg {
 	static ExtentReports extents;
 	public static ExtentReports getReportObject() {
-		ExtentSparkReporter spark = new ExtentSparkReporter(new File("C:\\Users\\arun.kumar\\eclipse-workspace\\ExtentReport\\reports\\index.html"));
+		ExtentSparkReporter spark = new ExtentSparkReporter(new File("C:\\Users\\arun.kumar\\eclipse-workspace\\Appium_FrameworkDesign\\reports\\index.html"));
 		spark.config().setReportName("Test Result");
 		spark.config().setDocumentTitle("Extent Report File");
 		

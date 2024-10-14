@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-12T08:43:27Z" name="Suite" finished-at="2024-10-12T08:44:02Z" duration-ms="35961">
+  <suite started-at="2024-10-14T10:17:00Z" name="Default suite" finished-at="2024-10-14T10:18:09Z" duration-ms="68342">
     <groups>
       <group name="Smoke">
-        <method signature="Ecomm_TC_2.FillForm_PositiveFlow(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AppiumTest.Ecomm_TC_2@459e9125]" name="FillForm_PositiveFlow" class="AppiumTest.Ecomm_TC_2"/>
+        <method signature="Ecomm_TC_2.FillForm_PositiveFlow(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AppiumTest.Ecomm_TC_2@c8c12ac]" name="FillForm_PositiveFlow" class="AppiumTest.Ecomm_TC_2"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-10-12T08:43:27Z" name="End to end Framework test" finished-at="2024-10-12T08:43:27Z" duration-ms="8">
-    </test> <!-- End to end Framework test -->
-    <test started-at="2024-10-12T08:43:27Z" name="Error validation Test" finished-at="2024-10-12T08:44:02Z" duration-ms="35882">
+    <test started-at="2024-10-14T10:17:00Z" name="Default test" finished-at="2024-10-14T10:18:09Z" duration-ms="68342">
       <class name="AppiumTest.Ecomm_TC_2">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:AppiumTest.Ecomm_TC_2@459e9125]" started-at="2024-10-12T14:13:27Z" name="ConfigureAppium" finished-at="2024-10-12T14:13:41Z" duration-ms="14632" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ConfigureAppium -->
-        <test-method is-config="true" signature="Property()[pri:0, instance:AppiumTest.Ecomm_TC_2@459e9125]" started-at="2024-10-12T14:13:41Z" name="Property" finished-at="2024-10-12T14:13:41Z" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="Property()[pri:0, instance:AppiumTest.Ecomm_TC_2@c8c12ac]" started-at="2024-10-14T15:47:00Z" name="Property" finished-at="2024-10-14T15:47:00Z" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Property -->
-        <test-method signature="FillForm_PositiveFlow(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AppiumTest.Ecomm_TC_2@459e9125]" started-at="2024-10-12T14:13:41Z" name="FillForm_PositiveFlow" data-provider="setDataProvide" finished-at="2024-10-12T14:13:57Z" duration-ms="15380" status="PASS">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:AppiumTest.Ecomm_TC_2@c8c12ac]" started-at="2024-10-14T15:47:00Z" name="ConfigureAppium" finished-at="2024-10-14T15:47:15Z" duration-ms="15176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method signature="FillForm_ErrorValidation()[pri:0, instance:AppiumTest.Ecomm_TC_2@c8c12ac]" started-at="2024-10-14T15:47:15Z" name="FillForm_ErrorValidation" finished-at="2024-10-14T15:47:30Z" duration-ms="14776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillForm_ErrorValidation -->
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:AppiumTest.Ecomm_TC_2@c8c12ac]" started-at="2024-10-14T15:47:30Z" name="ConfigureAppium" finished-at="2024-10-14T15:47:43Z" duration-ms="12671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method signature="FillForm_PositiveFlow(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AppiumTest.Ecomm_TC_2@c8c12ac]" started-at="2024-10-14T15:47:43Z" name="FillForm_PositiveFlow" data-provider="setDataProvide" finished-at="2024-10-14T15:48:02Z" duration-ms="19066" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,11 +47,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FillForm_PositiveFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.Ecomm_TC_2@459e9125]" started-at="2024-10-12T14:13:57Z" name="tearDown" finished-at="2024-10-12T14:14:02Z" duration-ms="5817" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumTest.Ecomm_TC_2@c8c12ac]" started-at="2024-10-14T15:48:02Z" name="tearDown" finished-at="2024-10-14T15:48:09Z" duration-ms="6535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- AppiumTest.Ecomm_TC_2 -->
-    </test> <!-- Error validation Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

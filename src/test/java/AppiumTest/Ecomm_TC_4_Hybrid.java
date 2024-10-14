@@ -28,6 +28,7 @@ public class Ecomm_TC_4_Hybrid extends BasicClass {
 	@Test(dataProvider = "getData", groups = "Regression")
 	public void generalStore(HashMap<String, String> input) throws InterruptedException {
 
+		Thread.sleep(2000);
 		form.setnameField(input.get("name"));
 		form.setGender(input.get("gender"));
 		form.countrySelection(input.get("country"));
@@ -41,7 +42,7 @@ public class Ecomm_TC_4_Hybrid extends BasicClass {
 
 		double totalSum = cart.getProductSum();
 		double displayFormattedSum = cart.getTotalamountdisplayed();
-		// Assert.assertEquals(totalSum, displayFormattedSum);
+		Assert.assertEquals(totalSum, displayFormattedSum);
 		cart.accpetTermsandCondition();
 		cart.submitOrder();
 	}

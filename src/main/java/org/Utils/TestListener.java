@@ -5,27 +5,30 @@ import java.io.IOException;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.annotations.BeforeMethod;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
+import AppiumTest.BasicClass;
 import io.appium.java_client.android.AndroidDriver;
 
-public class TestListener extends Android_Actions implements ITestListener {
+public class TestListener extends BasicClass implements ITestListener {
 
-	public TestListener(AndroidDriver driver) {
-		super(driver);
-	}
+//	public TestListener(AndroidDriver driver) {
+//		super(driver);
+//	}
 
 	ExtentReports extents = ExtentReportNg.getReportObject();
 
-	ExtentTest test;
+	ExtentTest test;  
 
 	// For now I'm not able to do implement @Override Annotation in any of below
 	// methods.
 	// So Couldn't able to run the Extent Report now.
 
+	
 	public void onTestStart(ITestResult result) {
 
 		test = extents.createTest(result.getMethod().getMethodName());
@@ -37,12 +40,11 @@ public class TestListener extends Android_Actions implements ITestListener {
 	}
 
 	public void onTestFailure(ITestResult result) {
-
+        Android_Actions android_Actions=new Android_Actions(driver);
 		test.fail(result.getThrowable().toString());
 
 		try {
-			test.addScreenCaptureFromPath(getScreenshotPath(result.getMethod().getMethodName(), driver),
-					result.getMethod().getMethodName());
+			test.addScreenCaptureFromPath(android_Actions.getScreenshotPath(result.getMethod().getMethodName()), result.getMethod().getMethodName());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

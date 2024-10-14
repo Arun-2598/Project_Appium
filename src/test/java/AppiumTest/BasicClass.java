@@ -37,7 +37,7 @@ public class BasicClass extends Appium_Utils{
 	public AndroidDriver driver;
 	public FormPage form;
 
-	@BeforeClass (alwaysRun=true)
+	@BeforeMethod (alwaysRun=true)
 	public void ConfigureAppium() throws IOException {
 		
 		
