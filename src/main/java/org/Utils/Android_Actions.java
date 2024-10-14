@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 
@@ -14,15 +15,17 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.ImmutableMap;
 
+import AppiumTest.BasicClass;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 
-public class Android_Actions {
+public class Android_Actions{
 
 	public AndroidDriver driver;
 
 	public Android_Actions(AndroidDriver driver) {
 		this.driver = driver;
+		
 	}
 
 	public void LongPressAction(WebElement element) {
@@ -60,6 +63,15 @@ public class Android_Actions {
 	
 	public void waits(int value) throws InterruptedException {
 		Thread.sleep(value);
+	}
+	
+	public String getScreenshotPath(String testCaseName) throws IOException {
+
+		File source = driver.getScreenshotAs(OutputType.FILE);
+		String destinationFile = "C:\\Users\\arun.kumar\\eclipse-workspace\\Appium_FrameworkDesign\\reports" + testCaseName +".png";
+		FileUtils.copyFile(source, new File(destinationFile));
+		
+		return destinationFile;
 	}
 
 }

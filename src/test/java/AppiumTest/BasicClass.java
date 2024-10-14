@@ -37,7 +37,7 @@ public class BasicClass extends Appium_Utils{
 	public AndroidDriver driver;
 	public FormPage form;
 
-	@BeforeClass
+	@BeforeMethod (alwaysRun=true)
 	public void ConfigureAppium() throws IOException {
 		
 		
@@ -46,13 +46,16 @@ public class BasicClass extends Appium_Utils{
 		FileInputStream fis = new FileInputStream("C:\\Users\\arun.kumar\\eclipse-workspace\\Appium_FrameworkDesign\\src\\main\\java\\org\\Resources\\data.properties");
 		prop.load(fis);
 		
-		String IP = prop.getProperty("IPAddress");
+		String IpAdress = System.getProperty("ipAddress")!=null ? System.getProperty("ipAddress") : prop.getProperty("ipAddress");
+	//	String IP = prop.getProperty("ipAddress");
+		
+		
 		String Port = prop.getProperty("Port");
 		String Device_Name = prop.getProperty("DeviceName");
 		String Set_App= prop.getProperty("App");
 		
 		// 1. Code to start server
-		server = startAppiumServer(IP,Integer.parseInt(Port));
+		server = startAppiumServer(IpAdress,Integer.parseInt(Port));
 
 		// 2. Setting up the Device(Simulator) Name and Apps
 		UiAutomator2Options options = new UiAutomator2Options();
@@ -69,7 +72,7 @@ public class BasicClass extends Appium_Utils{
 	
 	
 	
-	@BeforeClass
+	@BeforeClass(alwaysRun=true)
 	public void Property() {
 		PropertyConfigurator.configure("C:\\Users\\arun.kumar\\eclipse-workspace\\Appium\\log4j.properties");
 
@@ -78,7 +81,7 @@ public class BasicClass extends Appium_Utils{
 	
 	
 	
-	@AfterClass
+	@AfterClass(alwaysRun=true)
 	public void tearDown() throws InterruptedException {
 		Thread.sleep(5000);
 		driver.quit();

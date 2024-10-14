@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="org.Utils.TestListener" />
+	</listeners>
+	
+	<test name="End to end Framework test">
+		<classes>
+			<class name="AppiumTest.Ecomm_TC_4_Hybrid" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Error validation Test">
+		<classes>
+			<class name="AppiumTest.Ecomm_TC_2" />
+		</classes>
+	</test> <!-- Test -->
+	
+</suite> <!-- Suite -->
