@@ -64,7 +64,7 @@ public class BasicClass extends Appium_Utils{
 
 		// 3. Setting up the IP Address and Port
 		driver = new AndroidDriver(server.getUrl(), options);
-		form = new FormPage(driver);
+//		form = new FormPage(driver);
 		
 		
 
@@ -77,9 +77,6 @@ public class BasicClass extends Appium_Utils{
 		PropertyConfigurator.configure("C:\\Users\\arun.kumar\\eclipse-workspace\\Appium\\log4j.properties");
 
 	}
-	
-	
-	
 	
 	@AfterClass(alwaysRun=true)
 	public void tearDown() throws InterruptedException {
